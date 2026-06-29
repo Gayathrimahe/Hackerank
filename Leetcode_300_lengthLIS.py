@@ -47,6 +47,7 @@ def lengthOfLIS(nums: List[int]) -> int:
                 print("j: ", j, "nums[j]: ", nums[j], "dp: ", dp)
     return max(dp) if dp else 0
 
-nums = [67,2,4,1,6]
+#nums = [67,2,4,1,6]
+nums = [1,5,6,2,7,8]
 print(lengthOfLIS(nums))
 #print(lengthOfLIS([10,9,2,5,3,7,101,18]))

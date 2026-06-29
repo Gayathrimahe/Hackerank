@@ -31,7 +31,9 @@ def groupAnagrams( strs: List[str]) -> List[List[str]]:
     result = defaultdict(list)
     for word in strs:
         key = tuple(sorted(word)) #sorted returns a list of characters in the word sorted in ascending order and tuple converts the list to a tuple which is hashable and can be used as a key in the dictionary.
+        #print(f"Word: {word}, Key: {key}")
         result[(key)].append(word)
+        #print(f"Result: {result}")
     return print(list(result.values()))
 
 groupAnagrams(strs = ["eat","tea","tan","ate","nat","bat"])
